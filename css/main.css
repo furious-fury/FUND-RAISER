@@ -21,7 +21,7 @@ body{
     padding: 0;
     overflow-x: hidden;
 }
-  
+
 ul {
     list-style: none;
 }
@@ -166,15 +166,15 @@ section{
     width: 35rem;
 }
 .why{
-    overflow: hidden;
+    background-color: var(--light-orange);
 }
 
 .exp-container{
     position: relative;
     display: flex;
     justify-content: space-around;
-    background-color: var(--light-orange);
     padding: 5rem;
+    margin-top: -3rem;
 }
 .img-exp{
     background-color: var(--green-accent);
@@ -277,7 +277,7 @@ section{
     align-items: center;
     padding: 5rem;
     width: 100%;
-    height: 15rem;
+    height: 14rem;
     background-image: url(../img/liquid-cheese.svg);
     background-repeat: no-repeat;
     background-size: cover;
