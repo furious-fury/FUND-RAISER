@@ -1,2 +1,2 @@
 # FUND RAISER
- a website for a fund raining campaign
+ a website for a fund raising campaign
