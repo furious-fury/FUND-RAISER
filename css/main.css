@@ -90,9 +90,9 @@ section{
 .menu_list a{
     display: inline-block;
     vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transform: perspective(.1rem) translateZ(0);
+    transform: perspective(.1rem) translateZ(0);
+    box-shadow: 0 0 .1rem rgba(0, 0, 0, 0);
     position: relative;
     overflow: hidden;
 }
@@ -104,7 +104,7 @@ section{
     right: 51%;
     bottom: 0;
     background: var(--green-accent);
-    height: 4px;
+    height: .4rem;
     -webkit-transition-property: left, right;
     transition-property: left, right;
     -webkit-transition-duration: 0.3s;
@@ -181,6 +181,9 @@ section{
     width: 25rem;
     height: 35rem;
     overflow: hidden;
+    box-shadow: .7rem .5rem 1.5rem -0.7rem rgba(0,0,0,0.47);
+-webkit-box-shadow: .7rem .5rem 1.5rem -0.7rem rgba(0,0,0,0.47);
+-moz-box-shadow: .7rem .5rem 1.5rem -0.7rem rgba(0,0,0,0.47);
 }
 .img-exp img{
     width: 100%;
@@ -265,7 +268,7 @@ section{
     color: #fff;
     padding-top: 1rem;
 }
-.founder-number p{
+.founder-number a{
     font-size: 1.5rem;
     font-family: var(--font-sub);
     color: var(--green-accent);
@@ -307,4 +310,113 @@ section{
 
 .cause{
     background-color: var(--light-orange);
+    overflow: hidden;
+}
+.cause-heading{
+    margin: -1rem 0 0 5rem;
+    width: 60rem;
+}
+.cause-heading h1{
+    font-size: 3.5rem;
+    width: 20rem;
+    font-family: var(--font-heading);
+    color: var(--green-accent);
+}
+.cause-heading h1::after{
+    content: '';
+    display: block;
+    background-color: var(--green-accent);
+    width: 90%;
+    height: .5rem;
+    margin-top: 1rem;
+
+}
+.cause-heading p{
+    font-size: 1.3rem;
+    width: 55rem;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+    font-family: var(--font-sub);
+    color: var(--grey-text);
+}
+.cause-card_container{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 5rem;
+    height: 45rem;
+}
+.cause-cards{
+    position: relative;
+    background-color: #ffffff;
+    margin: 0 1.5rem;
+    width: 30rem;
+    height: 38rem;
+    overflow: hidden;
+    box-shadow: .7rem .5rem 1.5rem -0.7rem rgba(0,0,0,0.47);
+-webkit-box-shadow: .7rem .5rem 1.5rem -0.7rem rgba(0,0,0,0.47);
+-moz-box-shadow: .7rem .5rem 1.5rem -0.7rem rgba(0,0,0,0.47);
+}
+
+.cause-cards img{
+    width: 28rem;
+    margin: 1rem;
+    filter: brightness(50%);
+    transition: filter .3s ease-in;
+}
+.cause-cards:hover img{
+    filter: brightness(100%);
+}
+.cause-why{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    margin: 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: var(--font-sub);
+    padding: .5rem;
+    background-color: var(--green-accent);
+}
+.cause-cards h3{
+    position: relative;
+    font-size: 1.8rem;
+    margin: -1rem 1rem;
+    font-family: var(--font-heading);
+    color: var(--green-accent);
+}
+.cause-cards p{
+    font-size: 1.2rem;
+    margin: 1rem;
+    font-family: var(--font-sub);
+    color: var(--grey-text);
+}
+.cause-cards a{
+    margin: 1rem;
+}
+.cause-cards label{
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 1rem;
+    font-family: var(--font-sub);
+    color: var(--grey-text);
+}
+.cause-cards progress {
+    border-radius: .7rem; 
+    width: 90%;
+    height: 1.5rem;
+    margin: 1rem;
+    box-shadow: .3rem .3rem 1rem -0.7rem rgba(0,0,0,0.47);
+    -webkit-box-shadow: .3rem .3rem 1rem -0.7rem rgba(0,0,0,0.47);
+    -moz-box-shadow: .3rem .3rem 1rem -0.7rem rgba(0,0,0,0.47);
+
+}
+.cause-cards  progress::-webkit-progress-bar {
+    background-color: var(--light-orange);
+    border-radius: 0;
+}
+.cause-cards progress::-webkit-progress-value {
+    background-color: var(--green-accent);
+    border-radius: 0;
 }
